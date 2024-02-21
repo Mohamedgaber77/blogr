@@ -1,0 +1,124 @@
+:root {
+  --head-color: hsl(208, 49%, 24%);
+  --text-color1: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 85%);
+  --btn-color-r: hsl(356, 100%, 66%);
+  --btn-color-hover: hsl(355, 100%, 74%);
+  --footer-text-color: hsl(240, 2%, 79%);
+  --footer-body-color: hsl(207, 13%, 34%);
+  --footer-bg-color: hsl(240, 10%, 16%);
+  /*Gradient */
+  --gradient-btn-mobile: linear-gradient(
+    to top left,
+    hsl(353, 100%, 62%),
+    hsl(13, 100%, 72%)
+  );
+  --gradient-bg: linear-gradient(
+    to bottom left,
+    hsl(237, 17%, 21%),
+    hsl(237, 23%, 32%)
+  );
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+  font-family: "Overpass", "Ubuntu", sans-serif;
+}
+body {
+  box-sizing: inherit;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--text-color1);
+}
+.head {
+  padding: 2rem 0;
+  background-image: url(../img/bg-pattern-intro-desktop.svg),
+    var(--gradient-btn-mobile);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+  border-bottom-left-radius: 10rem;
+}
+
+.navbar {
+  margin-bottom: 3rem;
+}
+.navbar-nav {
+  margin-right: auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.logo {
+  width: 6rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
+#icon {
+  color: red;
+  font-size: 2rem;
+}
+.navbar ul .last-child {
+  margin-right: auto;
+}
+.nav-item {
+  margin-right: 3rem;
+  color: var(--text-color);
+}
+.nav-link {
+  color: var(--text-color);
+  font-weight: 600;
+}
+.dropdown-menu {
+  padding: 1rem 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+.dropdown-item {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.main-btn {
+  margin-right: 1rem;
+  background-color: transparent;
+  padding: 1rem 3rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.main-btn:last-child {
+  background-color: var(--text-color1);
+  color: var(--btn-color-r);
+}
+.heading-section {
+  padding: 5rem 0;
+  margin: 3rem 0;
+  text-align: center;
+}
+.heading-one {
+  font-size: 6rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.para {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.card {
+  width: 100%;
+}
